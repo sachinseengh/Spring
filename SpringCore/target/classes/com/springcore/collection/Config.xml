@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="std1" class="com.springcore.collection.Student">
+		
+		<property name="name">
+			<value>sachin</value>
+		</property>
+		<property name="address">
+			<list>
+				<value>gaushala</value>
+				<value>Kathmandu</value>
+			</list>
+		</property>
+		<property name="course">
+			<map>
+				<entry key="java" value="1month"></entry>
+				<entry key="c++" value="2month"></entry>
+			</map>
+		</property>
+		<property name="phone">
+			<set>
+				<value>123</value>
+				<value>585</value>
+			</set>
+		</property>
+	</bean>
+	
+	
+	<bean name="std2" class="com.springcore.collection.Student">
+	
+		<property name="name">
+			<value>sachin</value>
+		</property>
+		<property name="address">
+			<list>
+				<value>Bharatpur</value>
+				<value>Gau</value>
+			</list>
+		</property>
+		<property name="course">
+			<map>
+				<entry key="c" value="1month"></entry>
+				<entry key="c++" value="2month"></entry>
+			</map>
+		</property>
+		<property name="phone">
+			<set>
+				<value>123</value>
+				<value>585</value>
+			</set>
+		</property>
+	</bean>
+
+</beans>
