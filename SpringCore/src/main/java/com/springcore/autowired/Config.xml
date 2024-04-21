@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="address" class="com.springcore.autowired.Address">
+		<property name="state" value="madhesh"></property>
+		<property name="city" value="ktm"></property>
+		</bean>
+		
+	<!-- 	<bean name="st" class="com.springcore.autowired.Student" autowire="byName">
+			
+				
+		</bean>
+		-->
+		<!-- Constructor injection-->
+		<bean name="st" class="com.springcore.autowired.Student" autowire="constructor">
+			
+				<property name="name" value="madhesh"></property>
+		</bean>
+
+</beans>

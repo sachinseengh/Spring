@@ -21,4 +21,13 @@ public class Student {
 		return "Student [id=" + id + ", name=" + name + "]";
 	}
 	
+	
+	public  void init() {
+		System.out.println("init call : Initializing");
+	}
+	
+	public void destroy() {
+		System.out.println("Destroying");
+	}
+	
 }

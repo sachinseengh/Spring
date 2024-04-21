@@ -4,7 +4,7 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="st" class="com.springcore.beanlifecycle.Student">
+    <bean name="st" class="com.springcore.beanlifecycle.Student" init-method="init" destroy-method="destroy">
 		<property name="id" value="101"></property>
 		<property name="name" value="Sachin"></property>
 		</bean>
