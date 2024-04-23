@@ -8,7 +8,11 @@ public class App {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/sterotype/Config.xml");
 
          Emp em = context.getBean("employee",Emp.class);
-         System.out.print(em);
+         System.out.println(em);
+         
+
+         Emp em2 = context.getBean("employee",Emp.class);
+         System.out.println(em2);
 	}
 
 }
