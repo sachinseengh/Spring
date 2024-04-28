@@ -14,15 +14,12 @@ public class App {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
 		
 		
-		JdbcTemplate jd = context.getBean("jdbc",JdbcTemplate.class);
-		System.out.println(jd.getDataSource().getConnection());
-		
+//		JdbcTemplate jd = context.getBean("jdbc",JdbcTemplate.class);
+//		System.out.println(jd.getDataSource().getConnection());
+//		
 		
 	    StudentDaoimpl st = new StudentDaoimpl();
-	    Student student = new Student();
-
-	    Student s1=st.getStudentById(5);
-         System.out.println(s1.getName());
+	    
 	
 
 }
